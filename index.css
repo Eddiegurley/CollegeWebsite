@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    
+}
+
+.flex-container {
+   width: 100vw;
+   height: 100vh;
+   background-color: rgb(221, 208, 233);
+   display: flex;
+   flex-direction: row-reverse;
+   gap: 1rem;
+}
+
+.header {
+  background-color: rgb(117, 145, 232);
+  display: flex;
+  justify-content:center;
+  border: 2px solid black;
+   
+}  
+
+
+.column1 {
+    flex: 2;
+}
+column2 {
+    flex: 1;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 0.1rem;
+  }
+body {
+  font-family: 'CustomSerif', serif;
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 0.05rem;
+}
+
+h1, h2 {
+  font-family: 'CustomSans', sans-serif;
+  letter-spacing: 0.1rem;
+}
+
