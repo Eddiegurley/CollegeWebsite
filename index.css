@@ -1,30 +1,61 @@
 body {
     margin: 0;
-    
 }
+    
+
 
 .flex-container {
    width: 100vw;
    height: 100vh;
-   background-color: rgb(221, 208, 233);
+   background-color: rgb(242, 237, 248);
    display: flex;
    flex-direction: row-reverse;
    gap: 1rem;
 }
 
 .header {
-  background-color: rgb(117, 145, 232);
+  background-color: rgb(202, 235, 118);
   display: flex;
   justify-content:center;
   border: 2px solid black;
    
 }  
 
-
+.navbar {
+    display: flex;
+    flex-direction: column; /* Use Flexbox for alignment */
+    justify-content: space-evenly; /* Evenly space out items */
+    align-items: center; /* Center items vertically */
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    background-color: #efecec; /* Optional background color */
+}
+  
+  /* Style each list item as a box */
+  .navbar li {
+    flex: 1; /* All items have equal size */
+    text-align: center;
+    padding: 1rem;
+    margin: 0.5rem; /* Space between boxes */
+    background-color: #ddd; /* Box background */
+    border: 1px solid #ccc; /* Optional border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth hover effect */
+    cursor: pointer;
+  }
+  
+  /* Add hover effect */
+  .navbar li:hover {
+    background-color: #bbb; /* Change color on hover */
+  }
 .column1 {
     flex: 2;
 }
-column2 {
+.column2 {
+    flex: -1;
+}
+.column3 {
     flex: 1;
 }
 
@@ -32,15 +63,61 @@ h1 {
     text-align: center;
     letter-spacing: 0.1rem;
   }
-body {
-  font-family: 'CustomSerif', serif;
-  font-size: 10px;
-  line-height: 1.6;
-  letter-spacing: 0.05rem;
-}
 
-h1, h2 {
-  font-family: 'CustomSans', sans-serif;
-  letter-spacing: 0.1rem;
-}
+  @font-face {
+    font-family: 'CustomSerif';
+    src: url('path-to-serif-font.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'CustomSans';
+    src: url('path-to-sans-serif-font.woff2') format('woff2');
+  }
+  
+  body {
+    font-family: 'CustomSerif', serif;
+    font-size: 10px;
+    line-height: 1.6;
+  }
+  
+  h1, h2 {
+    font-family: 'CustomSans', sans-serif;
+    letter-spacing: 0.1rem;
+  } 
+  a {
+    text-decoration: underline;
+  }
+  
+  a:hover, a:focus {
+    text-decoration: none;
+    color: var(rgb(221, 10, 10));
+  }
+  
+  a:focus {
+    outline: none; /* Research and test usability */
+  }
+  
+  a:active {
+    color: var(rgb(0, 36, 128));
+  }
 
+  ul {
+    list-style-type: none;
+  }
+  
+  ul li::before {
+    content: '•'; /* Or a custom icon */
+    color: var(--accent-color);
+    margin-right: 0.5rem;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(202, 235, 118);
+    border: 2px solid black;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
