@@ -1,1 +1,1 @@
-Michael Gurley
+ This is my project a College Website. We welcome all who are interested in furthering their education. This project gives a description of the school, courses, and all information that is relative. It has a navbar with 6 links i created it as close as I could for the example given.

@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
     
 .flex-container {
@@ -21,13 +22,13 @@ body {
 
 .navbar {
     display: flex;
-    flex-direction: column; /* Use Flexbox for alignment */
-    justify-content: space-evenly; /* Evenly space out items */
-    align-items: center; /* Center items vertically */
-    list-style: none; /* Remove default list styling */
+    flex-direction: column; 
+    justify-content: space-evenly; 
+    align-items: center; 
+    list-style: none; 
     padding: 0;
     margin: 0;
-    background-color: #efecec; /* Optional background color */
+    background-color: #efecec; 
 }
   
 .navbar ul {
@@ -58,7 +59,7 @@ a:hover {
     flex: 2;
 }
 
-.column2 {
+.column2 ul li {
     flex: 1;
 }
 
@@ -66,12 +67,7 @@ a:hover {
     flex: 1;
 }
 
-h1 {
-    text-align: center;
-    letter-spacing: 0.1rem;
-  }
-
-  @font-face {
+@font-face {
     font-family: 'CustomSerif';
     src: url('path-to-serif-font.woff2') format('woff2');
   }
@@ -80,52 +76,37 @@ h1 {
     font-family: 'CustomSans';
     src: url('path-to-sans-serif-font.woff2') format('woff2');
   }
-  
+h1 {
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
   body {
     font-family: 'CustomSerif', serif;
     font-size: 10px;
     line-height: 1.6;
   }
+
   
   h1, h2 {
     font-family: 'CustomSans', sans-serif;
     letter-spacing: 0.1rem;
-  }
-
-  a {
-    text-decoration: underline;
-  }
-  
-  a:hover, a:focus {
-    text-decoration: none;
-    color: var(rgb(221, 10, 10));
-  }
-  
-  a:focus {
-    outline: none; /* Research and test usability */
-  }
-  
-  a:active {
-    color: var(rgb(0, 36, 128));
-  } 
-
-  ul {
-    list-style-type: none;
-  }
-  
-  ul li::before {
-    content: '•'; /* Or a custom icon */
-    color: var(--accent-color);
-    margin-right: 0.5rem;
-  }
+  }  
 
   footer {
     position: fixed;
     bottom: 0;
     width: 100%;
     background-color: rgb(202, 235, 118);
-    border: 2px solid black;
+    border-top: 2px solid black;
     text-align: center;
     padding: 1rem;
     font-size: 0.8rem;
+  }
+  p {
+    padding-left: 2%;
+  }
+
+  h2 {
+    text-align: center;
   }
