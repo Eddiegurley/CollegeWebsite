@@ -2,8 +2,6 @@ body {
     margin: 0;
 }
     
-
-
 .flex-container {
    width: 100vw;
    height: 100vh;
@@ -17,7 +15,7 @@ body {
   background-color: rgb(202, 235, 118);
   display: flex;
   justify-content:center;
-  border: 2px solid black;
+  border-bottom: 2px solid black;
    
 }  
 
@@ -32,29 +30,38 @@ body {
     background-color: #efecec; /* Optional background color */
 }
   
-  /* Style each list item as a box */
-  .navbar li {
-    flex: 1; /* All items have equal size */
-    text-align: center;
-    padding: 1rem;
-    margin: 0.5rem; /* Space between boxes */
-    background-color: #ddd; /* Box background */
-    border: 1px solid #ccc; /* Optional border */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s; /* Smooth hover effect */
-    cursor: pointer;
-  }
-  
-  /* Add hover effect */
-  .navbar li:hover {
-    background-color: #bbb; /* Change color on hover */
-  }
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70vh;
+    list-style-type: none;
+}
+
+.navbar ul li a {
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    padding: 10px;
+}
+
+.navbar ul li a:hover {
+    background-color: black;
+    color: white;
+}
+a:hover {
+    background-color: black;
+    color: white;
+}
+
 .column1 {
     flex: 2;
 }
+
 .column2 {
-    flex: -1;
+    flex: 1;
 }
+
 .column3 {
     flex: 1;
 }
@@ -83,7 +90,8 @@ h1 {
   h1, h2 {
     font-family: 'CustomSans', sans-serif;
     letter-spacing: 0.1rem;
-  } 
+  }
+
   a {
     text-decoration: underline;
   }
@@ -99,7 +107,7 @@ h1 {
   
   a:active {
     color: var(rgb(0, 36, 128));
-  }
+  } 
 
   ul {
     list-style-type: none;
